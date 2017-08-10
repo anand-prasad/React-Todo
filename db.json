@@ -19,88 +19,10 @@
   ],
   "Todos": [
     {
-      "id": 1,
-      "category": "Category 4",
-      "description": "Task1",
-      "duedate": "07/17/2017",
-      "taskState": true
-    },
-    {
-      "id": 2,
-      "category": "Category 1",
-      "description": "Task2",
-      "duedate": "07/20/2017",
-      "taskState": false
-    },
-    {
-      "description": "cascac",
+      "description": "assasa",
       "category": "Category 2",
       "taskState": true,
-      "id": 3
-    },
-    {
-      "description": "cascac",
-      "category": "Category 2",
-      "taskState": true,
-      "id": 4
-    },
-    {
-      "description": "effwefwfewf",
-      "category": "Category 3",
-      "taskState": true,
-      "id": 5
-    },
-    {
-      "description": "regergeg",
-      "category": "Category 2",
-      "id": 6
-    },
-    {
-      "description": "sadsdadsad",
-      "category": "Category 3",
-      "id": 7
-    },
-    {
-      "description": "fewfwf",
-      "category": "Category 1",
-      "taskState": true,
-      "id": 8
-    },
-    {
-      "description": "ffasdad",
-      "category": "Category 2",
-      "taskState": true,
-      "id": 9
-    },
-    {
-      "description": "vdsvsd",
-      "category": "Category 3",
-      "taskState": true,
-      "id": 10
-    },
-    {
-      "description": "fssdfs",
-      "category": "Category 2",
-      "taskState": true,
-      "id": 11
-    },
-    {
-      "description": "gerge",
-      "category": "Category 1",
-      "taskState": true,
-      "id": 12
-    },
-    {
-      "description": "vssdvs",
-      "category": "Category 2",
-      "taskState": true,
-      "id": 13
-    },
-    {
-      "description": "dfb",
-      "category": "Category 2",
-      "taskState": true,
-      "id": 14
+      "id": 1
     }
   ]
 }

@@ -1,13 +1,23 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import {getTasksData} from "./taskListAction";
+import {getTasksData,deleteTodo} from "./taskListAction";
+import ButtonComp from '../components/Button';
+
 
 
 export class TaskList extends React.Component { 
   componentWillMount() {
      this.props.onGetTaskList();
   }
+constructor(props){
+        super();
+        this.deleteRow = this.deleteRow.bind(this);
+}
+	deleteRow(rowIndex) {
+   this.props.onDeleteTodo(rowIndex);
+	}
+
   render() {
     const {taskListData} = this.props;
     return (
@@ -29,6 +39,7 @@ export class TaskList extends React.Component {
         <td>{taskList.description}</td>
         <td>{taskList.duedate}</td>
         <td>{taskList.taskState ?'done':'pending'}</td>
+        <td><ButtonComp name="Delete" onSave={() => this.deleteRow(taskList.id)}/></td>
         </tr>
         )): null}
     </tbody>
@@ -37,6 +48,9 @@ export class TaskList extends React.Component {
     );
   }
 }
+
+
+
 function mapStateToProps(state) {
     return {
         taskListData: state.get('taskList')
@@ -46,7 +60,8 @@ function mapStateToProps(state) {
 function mapDispathToProps(dispatch) {
     debugger;
     return {
-        onGetTaskList: (evt) => dispatch(getTasksData())
+        onGetTaskList: (evt) => dispatch(getTasksData()),
+        onDeleteTodo: (evt) => dispatch(deleteTodo(evt))
     }
 }
 

@@ -10,6 +10,10 @@ export default (state ={}, action) => {
             return Object.assign({},state,{taskListData:action.data});
         case GET_TASKS_SUCCEEDED:
         return Object.assign({},state,{taskListData:action.data});
+        case 'DELETE_TODO':
+        return Object.assign({},state,{taskListData:action.data});
+        case 'DELETE_TODO_SUCCEEDED':
+        return Object.assign({},state,{taskListData:action.data});
         default:
         	return state;    
     }

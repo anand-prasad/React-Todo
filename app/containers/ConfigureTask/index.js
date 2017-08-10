@@ -73,14 +73,13 @@ addRow(){
 function mapStateToProps(state){
   return {
     formData : state.get('formData'),
-    todoData:state.get('todoData')
   }
 }
 
 function mapDispatchToProps(dispatch){
   return{
     onAddTodo: (evt) => dispatch(addTodo(evt)),
-    onGetCategoryData: (evt) => dispatch(getCategoryData(evt)),
+    onGetCategoryData: (evt) => dispatch(getCategoryData()),
 
   }
 }
