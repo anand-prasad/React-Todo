@@ -2,7 +2,6 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import TextFieldComp from '../components/TextView';
 import SelectViewComp from '../components/SelectView';
-import DatePicker from 'react-bootstrap-date-picker';
 import ButtonComp from '../components/Button';
 import CheckBoxField from '../components/checkBoxView'
 import {Row} from 'react-bootstrap';
